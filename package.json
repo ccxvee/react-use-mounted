@@ -1,0 +1,11 @@
+{
+  "name": "usemounted",
+  "version": "1.0.0",
+  "description": "React custom hook that allows to check whether the component is mounted or not",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "ccxvee",
+  "license": "ISC"
+}

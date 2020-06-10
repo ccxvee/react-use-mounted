@@ -1,6 +1,6 @@
 {
   "name": "@ccxvee/react-use-mounted",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React custom hook that allows to check whether the component is mounted or not",
   "main": "index.js",
   "scripts": {

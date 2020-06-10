@@ -1,4 +1,5 @@
 # @ccxvee/react-use-mounted
+React custom hook that allows to check whether the component is mounted or not.
 
 ## Installation
 ```

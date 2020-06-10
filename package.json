@@ -6,8 +6,25 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "ccxvee",
-  "license": "ISC",
+  "author": {
+    "name": "ccxvee",
+    "email": "ccxvee@mail.ru"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ccxvee/react-use-mounted.git"
+  },
+  "keywords": [
+    "hook",
+    "react",
+    "use",
+    "mounted"
+  ],
+  "bugs": {
+    "url": "https://github.com/ccxvee/react-use-mounted/issues",
+    "email": "ccxvee@mail.ru"
+  },
   "dependencies": {},
   "peerDependencies": {
     "react": ">=16.8.0"

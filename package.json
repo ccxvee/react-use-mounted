@@ -9,6 +9,9 @@
   "author": "ccxvee",
   "license": "ISC",
   "dependencies": {},
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
   "devDependencies": {
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",

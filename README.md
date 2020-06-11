@@ -1,3 +1,4 @@
+![npm (scoped)](https://img.shields.io/npm/v/@ccxvee/react-use-mounted) ![David](https://img.shields.io/david/ccxvee/react-use-mounted)  ![NPM](https://img.shields.io/npm/l/@ccxvee/react-use-mounted) ![npm](https://img.shields.io/npm/dt/@ccxvee/react-use-mounted)
 # @ccxvee/react-use-mounted
 React custom hook that allows to check whether a component is mounted or not.
 

@@ -18,12 +18,13 @@ import { useState, useEffect } from 'react';
 import useMounted from "@ccxvee/react-use-mounted";
 
 function MyComponent() {
+
   const [state, setState] = useState();
   const isMounted = useMounted();
 
   useEffect(() => {
     async function veryAsyncFunction() {
-      //some hidden actions
+      /* some hidden actions */
     }
   
     veryAsyncFunction().then((data) => {

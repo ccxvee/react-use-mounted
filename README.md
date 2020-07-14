@@ -9,7 +9,7 @@ npm install @ccxvee/react-use-mounted
 
 ##  Advice before usage
 Probably you decided to install this package to fix the next error: *Can't perform a React state update on an unmounted component*.  But actually it is not a good solution.
-When you need to control requests it can be better to use [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) or [CancelToken](https://github.com/axios/axios#cancellation) interfaces which allow to cancel requests *before* unmount instead of prevent state update *after* unmount. When you need to control timers or subscriptions use clean-up function of [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect). However you still can find this package useful for other non-trivial cases. But first try to consider alternative approaches.
+When you need to control requests, it can be better to use [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) or [CancelToken](https://github.com/axios/axios#cancellation) interfaces, which allow to cancel requests *before* unmount instead of preventing state update *after* unmount. When you need to control timers or subscriptions, use clean-up function inside [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect). However, you still can find this package useful for other non-trivial cases. But first, try to consider alternative approaches.
 
 ## Usage
 **Note:** isMounted is ref, so use isMounted.current to get a boolean value
@@ -18,7 +18,6 @@ import { useState, useEffect } from 'react';
 import useMounted from "@ccxvee/react-use-mounted";
 
 function MyComponent() {
-
   const [state, setState] = useState();
   const isMounted = useMounted();
 
@@ -33,7 +32,7 @@ function MyComponent() {
       }
     });
     
-  });
+  }, []);
   
   return null;
 }

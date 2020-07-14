@@ -5,7 +5,7 @@ React custom hook that allows to check whether a component is mounted or not.
 ## Note
 Probably you should not use this package.
 
-I use this hook for requests to avoid error *"Can't perform a React state update on an unmounted component"*. But actually it is not a good solution. I find more predicteble to use [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) or [CancelToken](https://github.com/axios/axios#cancellation) interfaces which allow to cancel requests directly. Also if you need this package for timers or subscriptions use clean-up function of [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect) instead. You can find this package useful for other cases. But first try to find alternatives.
+I use this hook for requests to avoid error *"Can't perform a React state update on an unmounted component"*. But actually it is not a good solution. I find more predicteble to use [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) or [CancelToken](https://github.com/axios/axios#cancellation) interfaces which allow to cancel requests directly. If you need to control timers or subscriptions use clean-up function of [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect). Possibly you find this package useful for other cases. But first try to consider alternative approaches.
 
 ## Installation
 ```

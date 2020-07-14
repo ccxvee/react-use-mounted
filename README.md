@@ -23,6 +23,7 @@ function MyComponent() {
   const isMounted = useMounted();
 
   useEffect(() => {
+  
     async function veryAsyncFunction() {
       /* some hidden actions */
     }

@@ -2,6 +2,12 @@
 # @ccxvee/react-use-mounted
 React custom hook that allows to check whether a component is mounted or not.
 
+**Probably you should not use this package.**
+
+I use this helper hook for requests to avoid *"Can't perform a React state update on an unmounted component"* error. But actually it is not a good solution. I find more predicteble to use native [*AbortController*](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) or axios [*CancelToken*](https://github.com/axios/axios#cancellation) interface which allows to cancel requests directly.
+If you need this package for timers or subscriptions use [*clean-up function of useEffect*](https://reactjs.org/docs/hooks-reference.html#useeffect) instead. \
+Possibly you find this package useful for other cases. But first try to find alternatives.
+
 ## Installation
 ```
 npm install @ccxvee/react-use-mounted

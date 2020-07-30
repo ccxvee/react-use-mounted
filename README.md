@@ -7,12 +7,19 @@ React custom hook that allows to check whether a component is mounted or not.
 npm install @ccxvee/react-use-mounted
 ```
 
-##  Advice before usage
-Probably you decided to install this package to fix the next error: *Can't perform a React state update on an unmounted component*.  But actually it is not a good solution.
-When you need to control requests, it can be better to use [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) or [CancelToken](https://github.com/axios/axios#cancellation) interfaces, which allow to cancel requests *before* unmount instead of preventing state update *after* unmount. When you need to control timers or subscriptions, use clean-up function inside [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect). However, you still can find this package useful for other non-trivial cases. But first, try to consider alternative approaches.
+##  Before usage
+Probably you want to install this package to fix the next error: *"Can't perform a React state update on an unmounted component"*.  
+But first, try to make sure that this solution is perfect in your case. Who knows, maybe you'll find something better?
+
+For example: 
+* if you need to control requests, note to [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) interface, which lets you cancel requests before a component's unmount instead of preventing a state update after;
+* if you need to control timers or subscriptions, you can use a clean-up function inside [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect);
+* and so on;
+
+Just try to consider alternative approaches. If they don't solve your problem or an *isMounted-pattern* is more handy for you, feel free to use this package.
 
 ## Usage
-**Note:** isMounted is ref, so use isMounted.current to get a boolean value
+**Note:** *isMounted* is ref, so use *isMounted.current* to get a boolean value
 ```javascript
 import { useState, useEffect } from 'react';
 import useMounted from "@ccxvee/react-use-mounted";

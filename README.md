@@ -11,14 +11,14 @@ npm install @ccxvee/react-use-mounted
 Probably you want to install this package to fix the next error: *"Can't perform a React state update on an unmounted component"*. But first, try to make sure that this solution is perfect in your case. Who knows, maybe you'll find something better?
 
 For example: 
-* if you need to control requests, note to [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) interface, which lets you cancel requests before a component's unmount instead of preventing a state update after;
+* if you need to control requests, note to [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) interface, which lets you cancel requests before a component unmounts instead of preventing the component state update after an unmount;
 * if you need to control timers or subscriptions, you can use a clean-up function inside the callback passed to [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect);
 * and so on;
 
-Try to consider alternative approaches. If they don't solve your problem or an *isMounted-pattern* is more handy for you, feel free to use this package.
+However, if alternative approaches don't solve your problem or an *isMounted-pattern* is more handy for you, feel free to use this package.
 
 ## Usage
-**Note:** isMounted is [ref object](https://reactjs.org/docs/hooks-reference.html#useref), so use isMounted.current to get a boolean value. Don't forget to include isMounted in a dependency array of useEffect, if you need [conditionally firing an effect](https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect).
+**Note:** *isMounted* is [ref object](https://reactjs.org/docs/hooks-reference.html#useref), so use *isMounted.current* to get a boolean value. Don't forget to include *isMounted* in a dependency array passed to useEffect, if you need [conditionally firing an effect](https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect).
 ```javascript
 import { useState, useEffect } from 'react';
 import useMounted from "@ccxvee/react-use-mounted";

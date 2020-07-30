@@ -18,7 +18,7 @@ For example:
 However, if alternative approaches don't solve your problem or an *isMounted-pattern* is more handy for you, feel free to use this package.
 
 ## Usage
-**Note:** *isMounted* is [ref object](https://reactjs.org/docs/hooks-reference.html#useref), so use *isMounted.current* to get a boolean value. Don't forget to include *isMounted* in a dependency array passed to useEffect, if you need [conditionally firing an effect](https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect).
+**Note:** isMounted is [ref object](https://reactjs.org/docs/hooks-reference.html#useref), so use isMounted.current to get a boolean value. Don't forget to include isMounted in a dependency array passed to useEffect, if you need [conditionally firing an effect](https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect).
 ```javascript
 import { useState, useEffect } from 'react';
 import useMounted from "@ccxvee/react-use-mounted";

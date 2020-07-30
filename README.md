@@ -15,7 +15,7 @@ For example:
 * if you need to control timers or subscriptions, you can use a clean-up function inside [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect);
 * and so on;
 
-Just try to consider alternative approaches. If they don't solve your problem or an *isMounted-pattern* is more handy for you, feel free to use this package.
+Try to consider alternative approaches. If they don't solve your problem or an *isMounted-pattern* is more handy for you, feel free to use this package.
 
 ## Usage
 **Note:** *isMounted* is ref, so use *isMounted.current* to get a boolean value

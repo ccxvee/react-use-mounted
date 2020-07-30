@@ -8,8 +8,7 @@ npm install @ccxvee/react-use-mounted
 ```
 
 ##  Before usage
-Probably you want to install this package to fix the next error: *"Can't perform a React state update on an unmounted component"*.  
-But first, try to make sure that this solution is perfect in your case. Who knows, maybe you'll find something better?
+Probably you want to install this package to fix the next error: *"Can't perform a React state update on an unmounted component"*. But first, try to make sure that this solution is perfect in your case. Who knows, maybe you'll find something better?
 
 For example: 
 * if you need to control requests, note to [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) interface, which lets you cancel requests before a component's unmount instead of preventing a state update after;

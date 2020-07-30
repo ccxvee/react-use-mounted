@@ -18,7 +18,7 @@ For example:
 Try to consider alternative approaches. If they don't solve your problem or an *isMounted-pattern* is more handy for you, feel free to use this package.
 
 ## Usage
-**Note:** isMounted is [ref](https://reactjs.org/docs/hooks-reference.html#useref), so use isMounted.current to get a boolean value*
+**Note:** isMounted is [ref](https://reactjs.org/docs/hooks-reference.html#useref), so use isMounted.current to get a boolean value. Don't forget include isMounted variable as useEffect dependency.
 ```javascript
 import { useState, useEffect } from 'react';
 import useMounted from "@ccxvee/react-use-mounted";
@@ -40,7 +40,7 @@ function MyComponent() {
       }
     });
     
-  }, []);
+  }, [isMounted]);
   
   return null;
 }

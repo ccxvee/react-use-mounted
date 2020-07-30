@@ -18,7 +18,7 @@ For example:
 However, if alternative approaches don't solve your problem or an *isMounted-pattern* is more handy for you, feel free to use this package.
 
 ## Usage
-**Note:** isMounted is [ref object](https://reactjs.org/docs/hooks-reference.html#useref), so use isMounted.current to get a boolean value. Don't forget to include isMounted in a dependency array passed to useEffect, if you need [conditionally firing an effect](https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect).
+**Note:** isMounted is a [ref object](https://reactjs.org/docs/hooks-reference.html#useref), so use isMounted.current to get a boolean value. Don't forget to include isMounted in a dependency array passed to useEffect if you need [conditionally firing an effect](https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect).
 ```javascript
 import { useState, useEffect } from 'react';
 import useMounted from "@ccxvee/react-use-mounted";
@@ -46,7 +46,7 @@ function MyComponent() {
 }
 ```
 
-## Сomparison with popular packages
+## Comparison with similar packages
 There are many packages in npm that implement isMounted-pattern. However, the most popular of them have significant problems.
 * [react-is-mounted-hook](https://www.npmjs.com/package/react-is-mounted-hook) has thousands weekly downloads and one crucial issue. The hook returns a function that recreates on every render and breaks your [conditionally firing effect](https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect).
 * [react-use-mounted](https://www.npmjs.com/package/react-use-mounted) has hundreds weekly downloads and one crucial dependency. The package takes too much memory space for such a tiny hook. To be exact, [about 2 megabytes](https://packagephobia.com/result?p=react-use-mounted).

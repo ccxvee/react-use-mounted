@@ -16,10 +16,11 @@
     "url": "https://github.com/ccxvee/react-use-mounted.git"
   },
   "keywords": [
-    "hook",
     "react",
     "use",
-    "mounted"
+    "is",
+    "mounted",
+    "hook"
   ],
   "bugs": {
     "url": "https://github.com/ccxvee/react-use-mounted/issues",

@@ -47,9 +47,9 @@ function MyComponent() {
 ```
 
 ## Comparison with similar packages
-There are many packages in npm that implement isMounted-pattern. However, the most popular of them have significant problems.
+There are many packages in npm that implement isMounted-pattern. However, the most popular of them have significant disadvantages.
 * [react-is-mounted-hook](https://www.npmjs.com/package/react-is-mounted-hook) has thousands weekly downloads and one crucial issue. The hook returns a function that recreates on every render and breaks your [conditionally firing effect](https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect).
-* [react-use-mounted](https://www.npmjs.com/package/react-use-mounted) has hundreds weekly downloads and one crucial dependency. The package takes too much memory space for such a tiny hook. To be exact, [about 2 megabytes](https://packagephobia.com/result?p=react-use-mounted).
+* [react-use-mounted](https://www.npmjs.com/package/react-use-mounted) has hundreds weekly downloads and one weighty dependency. The package takes too much memory space for such a tiny hook. To be exact, [about 2 megabytes](https://packagephobia.com/result?p=react-use-mounted).
 
 Unlike these, **@ccxvee/react-use-mounted** have no dependencies at all and isMounted ref, returned by useMounted hook, do not affect your [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect).
 
